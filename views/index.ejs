@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" > <!--data-bs-theme="dark"-->
+    <head>
+        <%- include('./partials/head-tags.ejs') %>
+    </head>
+
+    <body>
+        <!-- header -->
+        <%- include('./partials/header.ejs') %>
+
+        <div class="main-container">
+            <img src="images/logo-transparent.png" alt="hearty-blogs-logo" class="blog-logo" />
+            <div>Welcome to Hearty Blogs - your own blogging haven! Where ideas come to life, stories are shared, and creativity knows no bounds.</div>
+            <div>
+                <a href="/"><button id="writePostButton" type="button" class="btn write-post" onclick="writePost()">Write your story!</button></a>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <%- include('./partials/footer.ejs') %>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
