@@ -4,15 +4,19 @@
         <%- include('./partials/head-tags.ejs') %>
     </head>
 
-    <body>
+    <body class="font-varela-round">
         <!-- header -->
         <%- include('./partials/header.ejs') %>
 
         <div class="main-container">
-            <img src="images/logo-transparent.png" alt="hearty-blogs-logo" class="blog-logo" />
-            <div>Welcome to Hearty Blogs - your own blogging haven! Where ideas come to life, stories are shared, and creativity knows no bounds.</div>
-            <div>
-                <a href="/"><button id="writePostButton" type="button" class="btn write-post" onclick="writePost()">Write your story!</button></a>
+            <div class="flex-components-row">
+                <img src="images/logo-transparent.png" alt="hearty-blogs-logo" class="blog-logo" />
+            </div>
+            <div class="home-content">
+                Welcome to <em><b>Hearty Blogs</b></em> - your own blogging haven! Where ideas come to life, stories are shared, and creativity knows no bounds.
+            </div>
+            <div class="btn-position-css">
+                <a href="/write"><button type="button" class="btn btn-css">Write your story!</button></a>
             </div>
         </div>
 
